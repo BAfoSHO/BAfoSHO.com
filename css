@@ -1,0 +1,38 @@
+/* Global styles */
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Sports theme styles */
+.sports-theme {
+  /* Add your sports-related styles here */
+}
+
