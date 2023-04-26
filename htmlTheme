@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1990s Sports Theme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>1990s Sports Theme</h1>
+  </header>
+  <main>
+    <div class="pixel-art">
+      <img src="images/pixel-art.png" alt="Pixel Art">
+    </div>
+    <div class="game-info">
+      <h2>Game Info</h2>
+      <ul>
+        <li>Team 1 vs Team 2</li>
+        <li>Date: 04/25/1995</li>
+        <li>Location: Madison Square Garden</li>
+      </ul>
+    </div>
+    <div class="retro-sound">
+      <audio src="audio/retro-sound.mp3" autoplay></audio>
+    </div>
+  </main>
+</body>
+</html>
