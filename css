@@ -1,40 +1,43 @@
 body {
-  background-color: #8f8f8f;
-  font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive; /* This is a pixelated font available on Google Fonts */
+    background-color: #000; /* Black background */
+    color: #0f0; /* Bright green text, reminiscent of old computer displays */
 }
 
-header {
-  background-color: #ffb300;
-  text-align: center;
-  padding: 1rem;
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase; /* All-caps for headers */
 }
 
-h1 {
-  margin: 0;
-  font-size: 4rem;
-  color: #1c1c1c;
+header, main, footer {
+    margin: 0 auto; /* Center the site's main content */
+    width: 90%; /* Take up 90% of the viewport's width */
+    max-width: 900px; /* But don't go over 900px wide */
+    border: 2px solid #0f0; /* Bright green borders around main sections */
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 2rem;
+nav ul {
+    list-style-type: none; /* No bullets for the nav menu */
+    padding: 0; /* No padding on the nav menu */
 }
 
-.pixel-art {
-  margin-bottom: 2rem;
+nav ul li {
+    display: inline; /* List items on one line */
+    margin-right: 10px; /* Space between menu items */
 }
 
-.game-info {
-  background-color: #1c1c1c;
-  color: #ffb300;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
+nav ul li a {
+    color: #0f0; /* Bright green text for links */
+    text-decoration: none; /* No underline */
 }
 
-.retro-sound {
-  margin-top: 2rem;
+nav ul li a:hover {
+    color: #ff0; /* Bright yellow text for hovered links */
+}
+
+section {
+    border: 1px solid #0f0; /* Bright green borders around each section */
+    padding: 5px;
+    margin-bottom: 5px;
 }
