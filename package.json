@@ -1,3 +1,11 @@
-"scripts": {
-  "build": "cp -r src/* dist/"
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp -r src/* dist/"
+  },
+  "author": "Brett Anderson",
+  "license": "ISC"
 }
