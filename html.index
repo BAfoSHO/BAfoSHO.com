@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>1990s Sports Theme</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>1990s Sports Theme</h1>
-  </header>
-  <main>
-    <div class="pixel-art">
-      <img src="images/pixel-art.png" alt="Pixel Art">
-    </div>
-    <div class="game-info">
-      <h2>Game Info</h2>
-      <ul>
-        <li>Team 1 vs Team 2</li>
-        <li>Date: 04/25/1995</li>
-        <li>Location: Madison Square Garden</li>
-      </ul>
-    </div>
-    <div class="retro-sound">
-      <audio src="audio/retro-sound.mp3" autoplay></audio>
-    </div>
-  </main>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills (Football)</a></li>
+                <li><a href="achievements.html">Achievements (Basketball)</a></li>
+                <li><a href="biography.html">Biography (Baseball)</a></li>
+                <li><a href="projects.html">Projects (Golf)</a></li>
+                <li><a href="shop.html">Shop (Tennis)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>About Me</h2>
+            <p>Your introduction goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Your Name</p>
+    </footer>
 </body>
 </html>
