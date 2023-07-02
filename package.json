@@ -4,8 +4,8 @@
   "description": "Portfolio project",
   "main": "index.js",
   "scripts": {
-	"build": "cp -r src/* dist/"
+    "build": "cp -r src/* dist/"
   },
-	"author": "Brett Anderson",
+  "author": "Brett Anderson",
   "license": "ISC"
 }
