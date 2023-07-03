@@ -127,3 +127,16 @@ input:focus + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
+#c {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+canvas {display:block;}
