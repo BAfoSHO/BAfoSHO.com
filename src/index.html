@@ -4,7 +4,7 @@
     <title>Brett Anderson - Developer Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="path_to_your_favicon.ico">
-    <script src="matrixBackground.js"></script>
+    <script src="matrixBackground.js"></script> 
 </head>
 <body>
     <canvas id="c"></canvas>
@@ -36,5 +36,12 @@
     <footer>
         <p>Copyright &copy; 2023 BA</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const script = document.createElement('script');
+          script.src = 'lazyload.js';
+          document.body.appendChild(script);
+        });
+      </script>      
 </body>
 </html>
