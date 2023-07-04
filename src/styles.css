@@ -135,14 +135,12 @@ input:checked + .slider:before {
 }
 
 #c {
-    position: absolute;
+    position: fixed; /* Fix the position so it doesn't move with page scroll */
     top: 0;
     left: 0;
-}
-
-*{
-    margin: 0;
-    padding: 0;
+    z-index: -1; /* This will keep the canvas in the background */
+    width: 100vw; /* This will cover the full viewport width */
+    height: 100vh; /* This will cover the full viewport height */
 }
 
 canvas {display:block;}
