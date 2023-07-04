@@ -139,24 +139,22 @@ canvas {display:block;}
 
 /* Define CSS variables for colors */
 :root {
-    --background-color-light: #fff;
-    --text-color-light: #000;
-    --background-color-dark: #000;
-    --text-color-dark: #fff;
+    --background-color: #fff;
+    --text-color: #000;
   }
-  
-  /* Apply CSS variables to elements */
-  body {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-    transition: background-color 0.5s, color 0.5s;
+
+/* Dark mode */
+.dark-mode {
+    --background-color: #000;
+    --text-color: #fff;
   }
-  
-  body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+
+/* Apply CSS variables to elements */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
-  
+
   #dark-mode-toggle {
     position: fixed;
     bottom: 20px;
@@ -165,7 +163,7 @@ canvas {display:block;}
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    color: var(--text-color-light);
+    color: #000;
   }
   
   #toggle-switch {
@@ -177,7 +175,7 @@ canvas {display:block;}
   }
   
   #toggle-switch:checked + label {
-    color: var(--text-color-dark);
+    color: #fff;
   }
   
   #toggle-switch + label::before {
