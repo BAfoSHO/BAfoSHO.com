@@ -15,8 +15,8 @@ window.addEventListener('load', function(){
         drops[x] = 1; 
 
    //drawing the characters
-    function draw()
-    {
+function draw()
+{
     //Black BG for the canvas
     //translucent BG to show trail
     ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
@@ -39,8 +39,9 @@ window.addEventListener('load', function(){
 
         //incrementing Y coordinate
         drops[i]++;
-        }
     }
+}
+
 
 
     setInterval(draw, 60);
