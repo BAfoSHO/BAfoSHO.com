@@ -68,19 +68,6 @@ footer {
     font-size: 0.8em;
 }
 
-/* Light and Dark mode styles */
-:root {
-    --background-color-light: #ffffff;
-    --text-color-light: #000000;
-    --background-color-dark: #000000;
-    --text-color-dark: #0f0;
-}
-
-body.light-mode {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-}
-
 /* Switch Styles */
 .switch {
     position: relative;
@@ -149,3 +136,55 @@ canvas {display:block;}
     height: 100vh; 
     opacity: 0.3; /* adjust as needed */
 }
+
+/* Define CSS variables for colors */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    --background-color-dark: #000;
+    --text-color-dark: #fff;
+  }
+  
+  /* Apply CSS variables to elements */
+  body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  #dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-color-light);
+  }
+  
+  #toggle-switch {
+    display: none;
+  }
+  
+  #toggle-switch + label {
+    cursor: pointer;
+  }
+  
+  #toggle-switch:checked + label {
+    color: var(--text-color-dark);
+  }
+  
+  #toggle-switch + label::before {
+    content: "☀️";
+  }
+  
+  #toggle-switch:checked + label::before {
+    content: "🌙";
+  }
+  
