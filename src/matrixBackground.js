@@ -31,5 +31,5 @@ window.addEventListener('load', function(){
         }
     }
 
-    setInterval(draw, 35);
+    setInterval(draw, 60);
 });
