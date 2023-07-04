@@ -1,8 +1,11 @@
 body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #000;
-    color: #0f0;
-    line-height: 1.6; /* Added line-height for readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    line-height: 1.6; 
+    transition: background-color 0.5s, color 0.5s; 
 }
 
 /* Page elements */
