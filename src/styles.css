@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
-    background-color: black;
+    background-color: var(--background-color-dark);
     color: var(--text-color-dark);
     line-height: 1.6; 
     transition: background-color 0.5s, color 0.5s;
@@ -154,7 +154,7 @@ canvas {display:block;}
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   padding: 20px;
-  background: transparent;
+  background: none;
   position: relative;
   z-index: 1;
 }
@@ -166,7 +166,7 @@ canvas {display:block;}
   justify-content: center;
   border-radius: 10px;
   padding: 15px;
-  background-color: transparent;
+  background-color: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
