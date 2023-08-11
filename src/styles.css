@@ -154,7 +154,7 @@ canvas {display:block;}
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   padding: 20px;
-  background: transparent;
+  background: black;
   position: relative;
   z-index: 1;
 }
