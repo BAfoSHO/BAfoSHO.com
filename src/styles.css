@@ -145,7 +145,7 @@ canvas {display:block;}
   left: 0;
   width: 100%;
   height: 100%;
-  background: black; /* Your background styling here */
+  background: /* ... */; /* Your background styling here */
   z-index: -1;
 }
 
