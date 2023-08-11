@@ -13,10 +13,10 @@ header, main, footer {
     margin: 0 auto;
     width: 90%;
     max-width: 900px;
-    border: 2px solid #0f0;
+    border: 2px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-    box-shadow: 0px 0px 20px 5px rgba(0, 255, 0, 0.5);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Headers */
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ff0;
+    color: #555;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,25 +41,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0f0;
+    color: #555; /* Changed to gray */
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #ff0;
+    color: #777;
 }
 
 /* Sections */
 section {
-    border: 1px solid #0f0;
+    border: 1px solid #ccc; /* Changed to gray */
     padding: 5px;
     margin-bottom: 5px;
+    background-color: #f5f5f5; /* Light gray background */
     transition: background-color 0.2s ease-in-out;
 }
 
 section:hover {
-    background-color: #333;
+    background-color: #e0e0e0;
 }
 
 /* Footer */
@@ -137,52 +138,43 @@ canvas {display:block;}
     opacity: 0.3; /* adjust as needed */
 }
 
-/* Define CSS variables for colors */
-:root {
-    --background-color: #fff;
-    --text-color: #000;
-  }
+.background {
+  /* Your matrix-like scrolling background styles here */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: /* ... */; /* Your background styling here */
+  z-index: -1;
+}
 
-/* Dark mode */
-.dark-mode {
-    --background-color: #000;
-    --text-color: #fff;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background: none;
+  position: relative;
+  z-index: 1;
+}
 
-/* Apply CSS variables to elements */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
+.tile {
+  display: flex; /* Center contents vertically and horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
 
-  #dark-mode-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    color: #000;
-  }
-  
-  #toggle-switch {
-    display: none;
-  }
-  
-  #toggle-switch + label {
-    cursor: pointer;
-  }
-  
-  #toggle-switch:checked + label {
-    color: #fff;
-  }
-  
-  #toggle-switch + label::before {
-    content: "☀️";
-  }
-  
-  #toggle-switch:checked + label::before {
-    content: "🌙";
-  }
-  
+.dismiss-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}  
+

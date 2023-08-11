@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brett Anderson - Developer Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="path_to_your_favicon.ico">
-    <script src="matrixBackground.js"></script> 
+    <script src="matrixBackground.js"></script>
 </head>
 <body>
     <canvas id="c"></canvas>
@@ -13,21 +15,53 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills (Football)</a></li>
-                <li><a href="achievements.html">Achievements (Basketball)</a></li>
-                <li><a href="projects.html">Projects (Golf)</a></li>
-                <li><a href="biography.html">Biography (Baseball)</a></li>
-                <li><a href="shop.html">Shop (Tennis)</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="intro">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio, where you will learn about my journey, challenges I have overcome, and skills that I have learned along the way.</p>
-        </section>
+        <div class="background"></div>
+        <div class="grid-container" id="gridContainer">
+          <!-- Fake Tiles with Links (You can replace these with real content and links) -->
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2><a href="skills.html">Page 1</a></h2>
+            <p>Content for Page 1</p>
+          </div>
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2><a href="achievements.html">Page 2</a></h2>
+            <p>Content for Page 2</p>
+          </div>
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2><a href="projects.html">Page 3</a></h2>
+            <p>Content for Page 3</p>
+          </div>
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2><a href="biography.html">Page 4</a></h2>
+            <p>Content for Page 4</p>
+          </div>
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2><a href="shop.html">Page 5</a></h2>
+            <p>Content for Page 5</p>
+          </div>
+          <div class="tile">
+            <span class="dismiss-btn">X</span>
+            <h2>Title 6</h2>
+            <p>"Live as if you were to die tomorrow. Learn as if you were to live forever"
+                - Mahatma Gandhi</p>
+          </div>
+        </div>
     </main>
     <!-- JavaScript code -->
+    <script src="tiles.js"></script>
     <script>
         document.getElementById('mode-switch').addEventListener('change', function(event) {
             document.body.classList.toggle('light-mode', event.target.checked);
@@ -36,17 +70,12 @@
     <footer>
         <p>Copyright &copy; 2023 BA</p>
     </footer>
-    <div id="dark-mode-toggle">
-        <input type="checkbox" id="toggle-switch">
-        <label for="toggle-switch">Toggle Dark Mode</label>
-      </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           const script = document.createElement('script');
           script.src = 'lazyload.js';
           document.body.appendChild(script);
         });
-      </script>
-    <script src="darklightmode.js"></script>      
+      </script>      
 </body>
 </html>
