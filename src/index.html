@@ -6,7 +6,6 @@
     <title>Brett Anderson - Developer Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="path_to_your_favicon.ico">
-    <script src="matrixBackground.js"></script>
 </head>
 <body>
     <canvas id="c"></canvas>
@@ -14,28 +13,21 @@
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="background"></div>
-        <div class="container">
+        <div class="flex-container">
           <section class="cms-boxes">
              <div class="container-fluid">
-                <div class="row">
+                <div class="row text-center">
                    <div class="col-md-4 cms-boxes-outer">
                       <div class="cms-boxes-items cms-features">
                          <div class="boxes-align">
                             <div class="small-box">
                                <i class="fa fa-4x fa-laptop">&nbsp;</i>
-                               <h3>Data Management</h3>
-                               <p>Gain valuable insights with WebCorpCo Data.</p>
+                               <h3><a href="resume.html">Resume</a></h3>
                             </div>
                          </div>
                       </div>
@@ -45,8 +37,7 @@
                          <div class="boxes-align">
                             <div class="small-box">
                                <i class="fa fa-4x fa-cog">&nbsp;</i>
-                               <h3>Enterprise<br> Data Funnel</h3>
-                               <p>Pull in realtime data from every source on the web.</p>
+                               <h3><a href="projects.html">Projects</a></h3>
                             </div>
                          </div>
                       </div>
@@ -56,21 +47,19 @@
                          <div class="boxes-align">
                             <div class="small-box">
                                <i class="fa fa-4x fa-arrows-alt" aria-hidden="true"></i>
-                               <h3>Pattern Analysis</h3>
-                               <p>The world's most advanced algorithms let loose on your data.</p>
+                               <h3><a href="hobbies.html">Hobbies</a></h3>
                             </div>
                          </div>
                       </div>
                    </div>
                 </div>
-                <div class="row">
+                <div class="row text-center">
                    <div class="col-md-6 cms-boxes-outer">
                       <div class="cms-boxes-items cms-built">
                          <div class="boxes-align">
                             <div class="large-box">
                                <i class="fa fa-4x fa-heart" aria-hidden="true"></i>
-                               <h3>Award-winning customer service</h3>
-                               <p>Award-winning, U.S. based support 24/7. If you need help we are here.</p>
+                               <h3><a href="interests.html">Current Interests</a></h3>
                             </div>
                          </div>
                       </div>
@@ -80,9 +69,8 @@
                          <div class="boxes-align">
                             <div class="large-box">
                                <i class="fa fa-4x fa-file-code-o">&nbsp;</i>
-                               <h3>Documentation</h3>
-                               <p>From connecting data sources to styling reports, we have everything you need to get the most value out of WebCorpCo.</p>
-                            </div>
+                               <h3>Word Game</h3>
+                               <p>goes here</p>
                          </div>
                       </div>
                    </div>
@@ -103,7 +91,7 @@
         });
     </script>
     <footer>
-        <p>Copyright &copy; 2023 BA</p>
+        <p>Copyright &copy; 2024 BA</p>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -111,6 +99,7 @@
           script.src = 'lazyload.js';
           document.body.appendChild(script);
         });
-      </script>      
+      </script>
+      <script src="fallingChars.js"></script>
 </body>
 </html>

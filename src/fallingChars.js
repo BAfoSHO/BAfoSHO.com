@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
     c.height = window.innerHeight;
     c.width = window.innerWidth;
 
-    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789#$%&";
     matrix = matrix.split("");
 
     var font_size = 10;
