@@ -2,6 +2,29 @@ window.onload = function() {
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
 
+    let ballImage = new Image();
+    ballImage.src = '../utils/assets/ball.png';
+    let hoopImage = new Image();
+    hoopImage.src = '../utils/assets/hoop.png';
+
+    let areImagesLoaded = false;
+    let imagesLoaded = 0;
+    const totalImages = 2; // Total number of images to load
+
+    ballImage.onload = function() {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+            areImagesLoaded = true;
+        }
+    };
+
+    hoopImage.onload = function() {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+            areImagesLoaded = true;
+        }
+    };
+
     let x = canvas.width / 2;
     let y = canvas.height - 30;
     let dx = 2;
@@ -13,37 +36,40 @@ window.onload = function() {
     let hoopX = (canvas.width - hoopWidth) / 2;
     let hoopSpeed = 2;
 
+    let rotationAngle = 0; // Initialize rotationAngle here
+
     function drawBall() {
-        ctx.beginPath();
-        ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-        ctx.fillStyle = "#FF0000";
-        ctx.fill();
-        ctx.closePath();
+        ctx.save();
+        ctx.translate(x + ballRadius, y + ballRadius);
+        ctx.rotate(rotationAngle);
+        ctx.drawImage(ballImage, -ballRadius, -ballRadius, ballRadius * 2, ballRadius * 2); 
+        ctx.restore(); 
+
+        rotationAngle += 0.05;
     }
 
     function drawHoop() {
-        ctx.beginPath();
-        ctx.rect(hoopX, canvas.height - hoopHeight, hoopWidth, hoopHeight);
-        ctx.fillStyle = "#0000FF";
-        ctx.fill();
-        ctx.closePath();
+        ctx.drawImage(
+            hoopImage, hoopX, canvas.height - hoopHeight, hoopWidth, hoopHeight);
     }
 
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawBall();
-        drawHoop();
-        x += dx;
-        y += dy;
-        hoopX += hoopSpeed;
-        if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-            dx = -dx;
-        }
-        if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
-            dy = -dy;
-        }
-        if(hoopX + hoopSpeed > canvas.width - hoopWidth || hoopX + hoopSpeed < 0) {
-            hoopSpeed = -hoopSpeed;
+        if (areImagesLoaded) {
+            drawBall();
+            drawHoop();
+            x += dx;
+            y += dy;
+            hoopX += hoopSpeed;
+            if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+                dx = -dx;
+            }
+            if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+                dy = -dy;
+            }
+            if(hoopX + hoopSpeed > canvas.width - hoopWidth || hoopX + hoopSpeed < 0) {
+                hoopSpeed = -hoopSpeed;
+            }
         }
     }
 
