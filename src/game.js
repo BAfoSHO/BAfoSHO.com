@@ -3,9 +3,9 @@ window.onload = function() {
     const ctx = canvas.getContext('2d');
 
     let ballImage = new Image();
-    ballImage.src = '../utils/assets/ball.png';
+    ballImage.src = '../utils/assets/images/ball.png';
     let hoopImage = new Image();
-    hoopImage.src = '../utils/assets/hoop.png';
+    hoopImage.src = '../utils/assets/images/hoop.png';
 
     let areImagesLoaded = false;
     let imagesLoaded = 0;
