@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
     c.height = window.innerHeight;
     c.width = window.innerWidth;
 
-    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789#$%&";
+    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789#$%&你好世界晴雨雪月星天地水火风бприветмигрджзйкл";
     matrix = matrix.split("");
 
     var font_size = 10;
@@ -20,6 +20,7 @@ function draw()
     //Black BG for the canvas
     //translucent BG to show trail
     ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    //creates a fading effect for the falling characters
     ctx.fillRect(0, 0, c.width, c.height);
 
     ctx.fillStyle = "rgba(255, 0, 0, 0.5)"; // changed to opaque red color
