@@ -26,15 +26,15 @@ window.onload = function() {
     };
 
     let x = canvas.width / 2;
-    let y = canvas.height - 30;
+    let y = canvas.height - 50;
     let dx = 2;
     let dy = -2;
-    const ballRadius = 10;
+    const ballRadius = 22;
 
-    let hoopHeight = 20;
-    let hoopWidth = 75;
-    let hoopX = (canvas.width - hoopWidth) / 2;
-    let hoopSpeed = 2;
+    let hoopHeight = 60;
+    let hoopWidth = 150;
+    let hoopX = (canvas.width - hoopWidth) / 3;
+    let hoopSpeed = 1.75;
 
     let rotationAngle = 0; // Initialize rotationAngle here
 
@@ -45,7 +45,7 @@ window.onload = function() {
         ctx.drawImage(ballImage, -ballRadius, -ballRadius, ballRadius * 2, ballRadius * 2); 
         ctx.restore(); 
 
-        rotationAngle += 0.05;
+        rotationAngle += 0.08;
     }
 
     function drawHoop() {
@@ -58,18 +58,20 @@ window.onload = function() {
         if (areImagesLoaded) {
             drawBall();
             drawHoop();
+            if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+                dx = -dx; // Reverse the horizontal direction
+                rotationAngle *= -1; // Reverse the spin direction
+            }
+            if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+                dy = -dy; // Reverse the vertical direction
+                rotationAngle *= -1; // Reverse the spin direction
+            }
+            if (hoopX + hoopSpeed > canvas.width - hoopWidth || hoopX + hoopSpeed < 0) {
+                hoopSpeed = -hoopSpeed; // Reverse the hoop's movement direction
+            }
             x += dx;
             y += dy;
             hoopX += hoopSpeed;
-            if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-                dx = -dx;
-            }
-            if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
-                dy = -dy;
-            }
-            if(hoopX + hoopSpeed > canvas.width - hoopWidth || hoopX + hoopSpeed < 0) {
-                hoopSpeed = -hoopSpeed;
-            }
         }
     }
 
