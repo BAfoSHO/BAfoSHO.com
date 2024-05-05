@@ -242,6 +242,10 @@ section.cms-boxes .cms-boxes-items:hover {
      margin-bottom: 10px;
 }
 
+.center-heading {
+    text-align: center;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
