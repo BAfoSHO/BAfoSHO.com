@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brett Anderson - Developer Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../src/styles.css">
     <link rel="icon" href="path_to_your_favicon.ico">
 </head>
 <body>
@@ -83,7 +83,7 @@
     <link rel="stylesheet" href="responsive-tiles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="tiles.js"></script>
+    <script src="../src/tiles.js"></script>
     <script>
         document.getElementById('mode-switch').addEventListener('change', function(event) {
             document.body.classList.toggle('light-mode', event.target.checked);
@@ -95,10 +95,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           const script = document.createElement('script');
-          script.src = 'lazyload.js';
+          script.src = '../src/lazyload.js';
           document.body.appendChild(script);
         });
       </script>
-      <script src="fallingChars.js"></script>
+      <script src="../src/fallingChars.js"></script>
 </body>
 </html>
