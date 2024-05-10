@@ -1,7 +1,8 @@
 import { selectWord, guessLetter, getDisplayWord, isGameOver, guessedLetters, incorrectGuesses } from './hangman.js';
 
-const difficulty = 'medium'; // Set the initial difficulty level
-selectWord(difficulty);
+const difficulties = ['easy', 'medium', 'hard'];
+const randomDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+selectWord(randomDifficulty);
 
 const wordDisplay = document.getElementById('word-display');
 const guessedLettersDisplay = document.getElementById('guessed-letters');

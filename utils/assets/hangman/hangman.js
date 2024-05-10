@@ -4,6 +4,12 @@ let word = '';
 let guessedLetters = [];
 let incorrectGuesses = 0;
 
+const maxIncorrectGuesses = {
+    easy: 5,
+    medium: 7,
+    hard: 9
+};
+
 function selectWord(difficulty) {
     const wordList = words[difficulty];
     word = wordList[Math.floor(Math.random() * wordList.length)];
@@ -22,10 +28,10 @@ function guessLetter(letter) {
 function displayWord(word, guessedLetters) {
     let displayedWord = '';
     for (let char of word) {
-        if (guessedLetters.includes(char) || char === ' ' || char === ',' || char === ':' || char === ';' || char === '.' || char === '!') {
+        if (guessedLetters.includes(char.toLowerCase()) || char === ' ' || char === ',' || char === ':' || char === ';' || char === '.' || char === '!') {
             displayedWord += char;
         } else {
-            displayedWord += '_';
+            displayedWord += '_ ';
         }
     }
     return displayedWord;
