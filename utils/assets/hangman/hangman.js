@@ -1,4 +1,4 @@
-import words from '../wordBank.js';
+import words from './wordBank.js';
 
 let word = '';
 let guessedLetters = [];
@@ -66,4 +66,5 @@ function isGameOver() {
     return !getDisplayWord().includes('_') || incorrectGuesses >= 6; // Hangman has 6 body parts
 }
 
-export { selectWord, guessLetter, getDisplayWord, isGameOver, buildHangman };
+export { selectWord, guessLetter, getDisplayWord, isGameOver, buildHangman, guessedLetters, incorrectGuesses };
+

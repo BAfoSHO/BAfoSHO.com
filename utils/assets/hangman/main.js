@@ -1,4 +1,4 @@
-import { selectWord, guessLetter, getDisplayWord, isGameOver } from './hangman.js';
+import { selectWord, guessLetter, getDisplayWord, isGameOver, guessedLetters, incorrectGuesses } from './hangman.js';
 
 const difficulty = 'medium'; // Set the initial difficulty level
 selectWord(difficulty);

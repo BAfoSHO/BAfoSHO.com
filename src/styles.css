@@ -215,7 +215,7 @@ section.cms-boxes .cms-play {
     background-color: #6d0808;
 }
 section.cms-boxes .cms-boxes-items:hover {
-  opacity: .2;
+  opacity: 0.2;
   cursor: pointer;
 }
 
@@ -235,22 +235,34 @@ section.cms-boxes a:hover {
     margin-bottom: 10px;
 }
 
+.game-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: black;
+}
+
 /* Hangman Game Styles */
 #hangman {
     display: block; /* Make hangman a block-level element */
     margin: 20px auto; /* Center the hangman display */
     text-align: center;
-    font-family: monospace; /* Use a monospace font for better alignment */
+    font-family: monospace; /* Use a monospace font for better alignment */;
+    background-color: black;
+    color: white;
 }
 
 #word-display {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    background-color: black;
+    color: white;
 }
 
 #guessed-letters {
-     margin-bottom: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
 }
 
 .center-heading {
