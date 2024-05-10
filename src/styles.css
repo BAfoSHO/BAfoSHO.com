@@ -149,8 +149,8 @@ section.cms-boxes .cms-boxes-outer .cms-boxes-items {
     display: table;
     width: 100%;
 }
-section.cms-boxes .cms-features {
-    background-color: #b70457;
+section.cms-boxes .cms-resume {
+    background-color: #6d0808;
     background-size: cover;
 }
 section.cms-boxes .boxes-align {
@@ -183,8 +183,8 @@ section.cms-boxes .cms-boxes-outer .cms-boxes-items {
     display: table;
     width: 100%;
 }
-section.cms-boxes .cms-features {
-    background-color: #b70457;
+section.cms-boxes .cms-resume {
+    background-color: #6d0808;
     background-size: cover;
 }
 section.cms-boxes .cms-boxes-outer .cms-boxes-items {
@@ -192,14 +192,14 @@ section.cms-boxes .cms-boxes-outer .cms-boxes-items {
     display: table;
     width: 100%;
 }
-section.cms-boxes .cms-security {
-    background-color: #0489b7;
+section.cms-boxes .cms-projects {
+    background-color: #6d0808;
 }
-section.cms-boxes .cms-security, section.cms-boxes .cms-documentation {
-    background-color: rgb(66, 16, 88);
+section.cms-boxes .cms-projects {
+    background-color: rgb(8, 8, 8);
 }
-section.cms-boxes .cms-scalability {
-    background: url(images/scalability.jpg) 0 0 no-repeat;
+section.cms-boxes .cms-hobbies {
+    background-color: #6d0808;
     background-size: cover;
 }
 section.cms-boxes .cms-boxes-outer {
@@ -207,16 +207,26 @@ section.cms-boxes .cms-boxes-outer {
     margin-bottom: 6px;
     padding: 0 3px;
 }
-section.cms-boxes .cms-built {
-    background: url(images/customer-service.jpg) 0 0 no-repeat;
+section.cms-boxes .cms-interests {
+    background-color: rgb(8, 8, 8);
     background-size: cover;
 }
-section.cms-boxes .cms-security, section.cms-boxes .cms-documentation {
-    background-color: rgb(66, 16, 88);
+section.cms-boxes .cms-play {
+    background-color: #6d0808;
 }
 section.cms-boxes .cms-boxes-items:hover {
   opacity: .2;
   cursor: pointer;
+}
+
+section.cms-boxes a {
+    color: #555; /* Change to the color you want */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+section.cms-boxes a:hover {
+    color: black; /* Change to the color you want on hover */
 }
 
 #cats img {
