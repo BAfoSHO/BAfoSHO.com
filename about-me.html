@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brett Anderson - Hobbies</title>
+    <title>Brett Anderson - About Me</title>
     <link rel="stylesheet" type="text/css" href="../src/styles.css">
     <link rel="icon" href="path_to_your_favicon.ico">
 </head>
 <body>
     <canvas id="c"></canvas>
     <header>
-        <h1>Hobbies</h1>
+        <h1>About Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,7 +24,9 @@
     <main>
         <section id="cats">
             <h2>My Cats</h2>
-            <img src="../utils/assets/images/babies.jpg" alt="My cats" loading="lazy">
+            <div class="image-container">
+                <img id="catImage" src="../utils/assets/images/babies.jpg" alt="My cats" loading="lazy" width="300">
+            </div>
             <p>Russell and Nora</p>
         </section>
         <section id="family">
@@ -33,7 +35,7 @@
         </section>
         <section id="sports">
             <h2>Sports</h2>
-            <p>Your sports interests go here...</p>
+            <p>Sports interests go here...</p>
         </section>
         <section id="gaming">
             <h2>Gaming</h2>
@@ -50,6 +52,7 @@
           document.body.appendChild(script);
         });
       </script>
-      <script src="../src/fallingChars.js"></script>   
+      <script src="../src/fallingChars.js"></script>
+      <script src="../src/imgExpand.js"></script> 
 </body>
 </html>

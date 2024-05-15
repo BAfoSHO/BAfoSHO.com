@@ -231,8 +231,9 @@ section.cms-boxes a:hover {
 
 #cats img {
     max-width: auto;
-    height: 750px;  
-    margin-bottom: 10px;
+    height: 500px;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
 
 .game-container {
@@ -282,3 +283,56 @@ section.cms-boxes a:hover {
     justify-items: center;
 }
 
+@media (max-width: 768px) {
+    header, main, footer {
+        width: 95%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project {
+        padding: 5px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Initial image styling */
+.image-container {
+    display: inline-block; /* Allow centering */
+    width: 300px;         /* Match initial image width */
+    overflow: hidden;    /* Hide overflow during expansion */
+}
+
+/* Expanded image styling */
+.image-container.expanded {
+    position: fixed;      
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    z-index: 100;        
+    max-width: 90vw;     /* Limit max width to 90% of viewport */
+    max-height: 90vh;    /* Limit max height to 90% of viewport */
+}
+
+/* Optional animation */
+.image-container img {
+    transition: all 0.3s ease; /* Smooth transition */
+}
